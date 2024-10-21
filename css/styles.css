@@ -1,0 +1,337 @@
+body {
+    background-color:  #f5a6c4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.container {
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff69b4;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+span {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+
+.gender-selection {
+    margin: 20px 0;
+}
+
+.gender-btn {
+    background-color: #ffb6c1;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gender-btn:hover {
+    background-color: #ff69b4;
+    color: white;
+}
+
+.gender-btn.active {
+    background-color: #ff69b4;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(255, 105, 180, 0.8);
+    transform: scale(1.05);
+}
+
+.preferences {
+    margin: 20px 0;
+}
+
+label {
+    font-size: 1.1em;
+    color: #333;
+    margin-right: 10px;
+}
+
+select {
+    font-size: 1em;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #ff69b4;
+    background-color: #fff;
+}
+
+.generate-btn {
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.generate-btn:hover {
+    background-color: #ff1493;
+    transform: scale(1.1);
+}
+
+.pickup-line {
+    margin-top: 20px;
+    font-size: 1.8em;
+    color: #ff69b4;
+    display: none;
+}
+
+.save-btn {
+    background-color: #ffb6c1;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background-color: #ff69b4;
+    color: white;
+}
+
+.share-icons {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.share-btn {
+    background-color: #48acd4;
+    border: none;
+    padding: 10px 20px;
+    margin: 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.share-btn i {
+    margin-right: 8px;
+}
+
+.share-btn:hover {
+    background-color: #4682B4;
+}
+
+
+#view-favorites-btn {
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+#view-favorites-btn:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+}
+
+#favorites-section {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 2px solid #ff69b4;
+}
+
+#favorites-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#favorites-list li {
+    background-color: #f0f8ff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    color: #333;
+}
+
+#favorites-list p {
+    color: #777;
+    font-style: italic;
+    text-align: center;
+}
+
+.close-favorites-btn {
+    background-color: #ffb6c1;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.close-favorites-btn:hover {
+    background-color: #ff69b4;
+    color: white;
+}
+
+
+/* Media Queries */
+
+/* Small devices (tablets, 768px and down) */
+/* Media Queries */
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .gender-btn, 
+    .generate-btn, 
+    .save-btn, 
+    #view-favorites-btn, 
+    .close-favorites-btn {
+        font-size: 1.1em;
+        padding: 8px 16px;
+    }
+
+    .preferences {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .preferences label {
+        font-size: 1em;
+        margin: 5px 0;
+    }
+
+    select {
+        font-size: 1em;
+        padding: 5px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 2px solid #ff69b4;
+        background-color: #fff;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .pickup-line {
+        font-size: 1.5em;
+    }
+
+    #favorites-list li {
+        font-size: 1em;
+    }
+
+    .share-icons {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .share-btn {
+        padding: 8px 15px;
+        font-size: 1em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+
+/* Extra small devices (phones, 480px and down) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .gender-btn, 
+    .generate-btn, 
+    .save-btn, 
+    #view-favorites-btn, 
+    .close-favorites-btn {
+        font-size: 1em;
+        padding: 6px 12px;
+    }
+
+    .pickup-line {
+        font-size: 1.3em;
+    }
+
+    label {
+        font-size: 0.9em;
+    }
+
+    .preferences {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .preferences label {
+        margin-bottom: 5px;
+    }
+}
+
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .gender-btn, 
+    .generate-btn, 
+    .save-btn, 
+    #view-favorites-btn, 
+    .close-favorites-btn {
+        font-size: 1.5em;
+        padding: 15px 30px;
+    }
+
+    .pickup-line {
+        font-size: 2em;
+    }
+}

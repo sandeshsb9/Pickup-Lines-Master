@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Pickup Lines Master</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/loading.css" />
+</head>
+<body>
+
+  <!-- Loading and Welcome Screens -->
+  <div id="loading">Loading</div>
+  <div id="welcome">
+    <img src="images/Leonardo_Phoenix_A_masterfully_crafted_logo_for_a_website_name_0-photoaidcom-cropped.jpg" alt="Logo">
+    <div>Welcome to Pickup Lines Master</div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Pickup Lines Master</h1>
+    <span>Your ultimate destination for crafting the perfect pickup line.</span>
+
+    <!-- Gender Selection -->
+    <div class="gender-selection">
+      <button id="male-btn" class="gender-btn">👦 Male</button>
+      <button id="female-btn" class="gender-btn">👧 Female</button>
+    </div>
+
+    <!-- Tone and Occasion Selection -->
+    <div class="preferences">
+      <label for="tone">Tone:</label>
+      <select id="tone">
+        <option value="funny">Funny</option>
+        <option value="romantic">Romantic</option>
+        <option value="clever">Clever</option>
+      </select>
+
+      <label for="occasion">Occasion:</label>
+      <select id="occasion">
+        <option value="firstDate">First Date</option>
+        <option value="casual">Casual</option>
+        <option value="special">Special Occasion</option>
+      </select>
+    </div>
+
+    <!-- Generate Button -->
+    <button id="generate-btn" class="generate-btn">Generate Pickup Line</button>
+
+    <!-- Pickup Line Display -->
+    <div id="pickup-line" class="pickup-line" style="display: none"></div>
+
+    <!-- Save to Favorites -->
+    <button id="save-btn" class="save-btn">❤️ Save to Favorites</button>
+
+    <!-- View Favorites Button -->
+    <button id="view-favorites-btn" class="view-favorites-btn">📜 View Favorites</button>
+
+    <!-- Favorites Section (Hidden initially) -->
+    <div id="favorites-section" style="display: none">
+      <h2>Your Favorite Pickup Lines</h2>
+      <ul id="favorites-list"></ul>
+      <button class="close-favorites-btn">Back to Main</button>
+    </div>
+
+    <!-- Social Sharing -->
+    <div class="share-icons">
+      <button id="share-facebook" class="share-btn">
+        <i class="fab fa-facebook-f"></i> Share on Facebook
+      </button>
+      <button id="share-twitter" class="share-btn">
+        <i class="fab fa-twitter"></i> Share on Twitter
+      </button>
+      <button id="share-instagram" class="share-btn">
+        <i class="fab fa-instagram"></i> Share on Instagram
+      </button>
+    </div>
+  </div>
+  <script src="./js/Script.js"></script>
+  <script src="./js/loading.js"></script>
+</body>
+</html>

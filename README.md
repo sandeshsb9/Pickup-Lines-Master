@@ -31,10 +31,20 @@ Here are some demo images of the Pickup Lines Master app:
 
 ## Installation
 ------------
-1. bash git clone https://github.com/sandeshsb9/Pickup-Lines-Master.git
-2. bash cd pickup-lines-master
-3. Open index.html in your preferred browser.
-4. 
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/sandeshsb9/Pickup-Lines-Master.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd pickup-lines-master
+    ```
+
+3. Open `index.html` in your preferred browser.
 
 ## License
 -------

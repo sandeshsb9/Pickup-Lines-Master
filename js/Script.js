@@ -261,3 +261,31 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("Favorites loaded from localStorage:", favoritePickupLines);
     }
 });
+
+// Share on Facebook with the current pickup line
+document.getElementById('share-facebook').addEventListener('click', function() {
+    const currentLine = encodeURIComponent(pickupLineDisplay.textContent); // Assuming pickupLineDisplay holds the current line
+    const url = encodeURIComponent(window.location.href);
+    const text = encodeURIComponent(`Check out this amazing Pickup Line Generator! Here's a line: "${currentLine}"`);
+    const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${text}`;
+    window.open(facebookShareUrl, '_blank');
+});
+
+// Share on Twitter with the current pickup line
+document.getElementById('share-twitter').addEventListener('click', function() {
+    const currentLine = encodeURIComponent(pickupLineDisplay.textContent);
+    const url = encodeURIComponent(window.location.href);
+    const text = encodeURIComponent(`Check out this amazing Pickup Line Generator! Here's a line: "${currentLine}"`);
+    const twitterShareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
+    window.open(twitterShareUrl, '_blank');
+});
+
+// Share on Instagram
+document.getElementById('share-instagram').addEventListener('click', function() {
+    const currentLine = pickupLineDisplay.textContent; // Get the current pickup line
+    const url = window.location.href; // Get the current URL
+    const message = `Check out this amazing Pickup Line Generator! Here's a line: "${currentLine}" \n\nLink: ${url}`;
+    
+    prompt("Copy this message to share on Instagram:", message); // Prompt to copy the message
+});
+

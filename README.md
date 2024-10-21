@@ -1,5 +1,6 @@
 ## Pickup Lines Master
-===================
+===================\
+
 Welcome to **Pickup Lines Master**, your ultimate companion for crafting the perfect pickup lines! Whether you're breaking the ice or making a memorable impression, this app is designed to help you unleash your charm with just a tap.
 
 ## Features
